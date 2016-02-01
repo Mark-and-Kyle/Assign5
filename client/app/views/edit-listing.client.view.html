@@ -1,0 +1,32 @@
+<div class="row" ng-controller="ListingsController" ng-init="findOne()" >
+  <div class="col-md-offset-1 col-md-10 formWrapper">
+    <div class="page-header">
+      <h3>Update Listing</h3>
+      <form name="listingForm" class="form-horizontal" ng-submit="update(listingForm.$valid)">
+        <fieldset>
+          <div class="form-group" >
+            <label for="name">Name</label>
+            <input name="name" type="text" ng-model="name" id="name" class="form-control"  ng-init="variables()"  placeholder="Name">
+			
+          </div>
+          <div class="form-group">
+            <label for="code">Code</label>
+			
+            <input name="code" type="text" ng-model="code" id="code" class="form-control" ng-init="variables()" placeholder="Code">
+			
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input  name="address" type="text" ng-model="address" id="address" class="form-control" ng-init="variables()" placeholder="Address">
+		
+          </div>
+          <div class="form-group">
+			
+            <input type="submit" class="btn btn-default">
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
